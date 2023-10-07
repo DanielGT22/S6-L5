@@ -25,13 +25,16 @@
             src="../Netflix-assets/assets/netflix_logo.png"
             alt=""
             width="100"
-            class="me-md-5"
+            class="me-md-5 ms-md-5"
           />
           <div>
             <div
               class="d-flex d-md-none text-white position-absolute top-0 end-0 p-3 align-items-center"
+              style="margin-right: 20px"
             >
-              <i class="bi bi-search mx-2"></i>
+              <div class="searchingMobile">
+                <a href=""><i class="bi bi-search mx-2"></i></a>
+              </div>
               <p class="mx-2 my-0">KIDS</p>
               <i class="bi bi-bell-fill mx-2"></i>
               <img
@@ -63,11 +66,21 @@
             </li>
           </ul>
         </div>
-        <div class="right">
+        <div class="right me-5">
           <div>
             <div>
               <div class="d-none d-md-flex text-white p-3 align-items-center">
-                <i class="bi bi-search mx-2"></i>
+                <div class="searching">
+                  <input
+                    type="text"
+                    class="searchBar1 rounded text-white text-center bg-dark border"
+                    placeholder="Search..."
+                    style="display: none; width: 20vw"
+                  />
+                  <button class="btn border-0 text-white searchbutton">
+                    <i class="bi bi-search mx-2"></i>
+                  </button>
+                </div>
                 <p class="mx-2 my-0">KIDS</p>
                 <i class="bi bi-bell-fill mx-2"></i>
                 <img
@@ -109,15 +122,19 @@
             </div>
           </div>
           <div class="right d-flex text-white align-items-center">
-            <i class="bi bi-list-nested"></i>
-            <i class="bi bi-grid-fill mx-5 pe-5"></i>
+            <a href="" class="text-white border">
+              <i class="bi bi-list-nested p-3"></i
+            ></a>
+            <a href="" class="text-white border" style="margin-right: 10vw">
+              <i class="bi bi-grid-fill p-3"></i
+            ></a>
           </div>
         </div>
       </div>
       <!--  -->
-      <div class="Trending mx-3">
+      <div class="Trending" style="margin-left: 5vw; margin-right: 5vw">
         <h1 class="text-white fs-5 pt-5">Trending Now</h1>
-        <div class="row my-4">
+        <div class="row g-2">
           <div class="col col-6 col-md-4 col-lg-2 mx-auto mb-5 responsive">
             <img
               src="../Netflix-assets/assets/media/media0.webp"
@@ -162,9 +179,9 @@
           </div>
         </div>
       </div>
-      <div class="Trending mx-3">
+      <div class="Trending" style="margin-left: 5vw; margin-right: 5vw">
         <h1 class="text-white fs-5 pt-5">Trending Now</h1>
-        <div class="row my-4">
+        <div class="row g-2">
           <div class="col col-6 col-md-4 col-lg-2 mx-auto mb-5 responsive">
             <img
               src="../Netflix-assets/assets/media/media6.jpg"
@@ -209,9 +226,9 @@
           </div>
         </div>
       </div>
-      <div class="Trending mx-3">
+      <div class="Trending" style="margin-left: 5vw; margin-right: 5vw">
         <h1 class="text-white fs-5 pt-5">Trending Now</h1>
-        <div class="row my-4">
+        <div class="row g-2">
           <div class="col col-6 col-md-4 col-lg-2 mx-auto mb-5 responsive">
             <img
               src="../Netflix-assets/assets/media/media12.jpg"
@@ -259,14 +276,24 @@
     </main>
     <footer class="w-100 d-flex justify-content-center">
       <div class="content">
-        <div class="icons d-flex text-white">
-          <i class="bi bi-discord mx-2 my-1"></i>
-          <i class="bi bi-github mx-2 my-1"></i>
-          <i class="bi bi-instagram mx-2 my-1"></i>
-          <i class="bi bi-skype mx-2 my-1"></i>
-          <i class="bi bi-stack mx-2 my-1"></i>
+        <div class="icons d-flex text-white my-4">
+          <a href="" class="text-white">
+            <i class="bi bi-discord mx-2 my-1"></i
+          ></a>
+          <a href="" class="text-white">
+            <i class="bi bi-github mx-2 my-1"></i
+          ></a>
+          <a href="" class="text-white">
+            <i class="bi bi-instagram mx-2 my-1"></i
+          ></a>
+          <a href="" class="text-white">
+            <i class="bi bi-skype mx-2 my-1"></i
+          ></a>
+          <a href="" class="text-white">
+            <i class="bi bi-stack mx-2 my-1"></i
+          ></a>
         </div>
-        <div class="links d-flex" style="font-size: 0.7em">
+        <div class="links d-flex" style="font-size: 1em">
           <div class="link1 text-white mx-2">
             <p>Audio and Subtitles</p>
             <p>Media Center</p>
@@ -311,4 +338,5 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"
   ></script>
+  <script src="script.js"></script>
 </html>
