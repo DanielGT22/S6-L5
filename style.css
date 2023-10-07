@@ -170,3 +170,59 @@ body {
   animation: BottomToTop 1s linear forwards;
   animation-delay: 2s;
 }
+.popup1 {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+.logo {
+  animation: fadeOut 2s;
+}
+.popup {
+  animation: fadeIn 4s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    transform: (1);
+  }
+  100% {
+    transform: (10);
+  }
+}
+/*  */
+/*  */
+.popup3 img:hover {
+  animation: rotate-90 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes rotate-90 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+.popup1:hover,
+.popup2:hover,
+.popup3:hover,
+.popup4:hover {
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@keyframes scale-up-center {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}
